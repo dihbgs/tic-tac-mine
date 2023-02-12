@@ -1,0 +1,138 @@
+body {
+  background-image: url("assets/blackstone-00.png"),
+    url("assets/blackstone-00.png"), url("assets/blackstone-01.png");
+  background-repeat: repeat-y, repeat-y, repeat;
+  background-position-x: left, right, center;
+  font-family: "MinecraftiaRegular";
+  flex-direction: column;
+  text-shadow: 2px 2px #efefef;
+  font-weight: normal;
+  align-items: center;
+  font-style: normal;
+  color: #3b3b3b;
+  display: flex;
+  margin: 20px;
+}
+
+.minecraft-button {
+  border-bottom: 2px solid #565656;
+  border-right: 2px solid #565656;
+  border-left: 2px solid #ababab;
+  border-top: 2px solid #ababab;
+  text-shadow: 2px 2px #4c4c4c;
+  background-color: #6f6f6f;
+  outline: 2px solid #000;
+  font-family: inherit;
+  color: #efefef;
+  min-width: 180px;
+  padding: 4px;
+  margin: 3px;
+}
+
+.minecraft-button:hover {
+  border-bottom: 2px solid #59639a;
+  border-right: 2px solid #59639a;
+  border-left: 2px solid #bdc6ff;
+  border-top: 2px solid #bdc6ff;
+  text-shadow: 2px 2px #4c4c4c;
+  background-color: #7276b3;
+  outline: 2px solid #000;
+}
+
+.minecraft-button:active {
+  outline: 2px solid #efefef;
+}
+
+ol,
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.board-row:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+.status {
+  margin-bottom: 8px;
+}
+
+div {
+  display: table;
+}
+
+.square {
+  font-family: "MinecraftiaRegular";
+  border-left: 2px solid #373737;
+  border-top: 2px solid #373737;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  background-color: #8b8b8b;
+  font-weight: bold;
+  padding: 1px;
+  height: 38px;
+  float: left;
+  width: 38px;
+}
+
+.square:hover {
+  background-color: #c1c1c1;
+}
+
+.square:focus {
+  background-color: #c1c1c1;
+  outline: none;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 600px) {
+  .game {
+    flex-direction: row;
+    display: flex;
+  }
+}
+
+.game-board {
+  border-bottom: 3px solid #555;
+  border-right: 3px solid #555;
+  border-left: 3px solid #fff;
+  border-top: 3px solid #fff;
+  background-color: #c6c6c6;
+  outline: 2px solid #000;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 3px;
+  display: flex;
+  padding: 8px;
+  margin: 8px;
+}
+
+.game-board#main {
+  min-width: 180px;
+}
+
+.game-board#side {
+  height: fit-content;
+  width: fit-content;
+  max-width: 342px;
+}
+
+.game-info {
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4px;
+  margin-top: 12px;
+  flex-flow: wrap;
+  display: flex;
+}
